@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="nav-item ms-3">
+    <a class="navbar-brand" href="/">Agenda</a>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto me-3 text-end">
+
+      <li class="nav-item">
+        <a class="nav-link" href="/contato/index">Cadastrar Contato</a>
+      </li>
+
+      <% if(!user) {%>
+      <li class="nav-item">
+        <a class="nav-link" href="/login/index">Entrar</a>
+      </li>
+
+      <%}else {%> 
+      <li class="nav-item">
+        <a class="nav-link" href="/login/logout">Sair</a>
+      </li>
+      <%}%>
+      
+    </ul>
+  </div>
+</nav>
